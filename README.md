@@ -43,10 +43,10 @@ This is necessary to communicate with the EU Artifactory server.cacert.pem
   5. Link the repository with your user credentials. Go to step 3 and follow the second step from **Set Me Up**.
   6. Optional you can add the conan stage repository: [c_adas_cip_conan_stage_l](https://eu.artifactory.conti.de/ui/repos/tree/General/c_adas_cip_conan_stage_l), it's useful to test your Conan package. Follow the steps from point 3 and 5.
   7. cohRemove the official conan repository from your remote list to avoid errors with that one
-	
-    ```PowerShell
-    conan remote remove conan-center
-    ```
+
+      ```PowerShell
+      conan remote remove conan-center
+      ```
   8. Clone the repository: [cip_bti_conan](http://github-am.conti.de/ADAS-3RDPARTY/cip_bti_conan) 
 
 #### Create a Conan package:
