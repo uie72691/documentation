@@ -3,8 +3,8 @@
 
 ## 1. Overview
 
-Projects use a lot of tools (e.g. compilers) which have no installation setup, i.e. where the installation is only a simple copy function.
-For these tools, we need an automated mechansim to deploy them on the CI Platform and the developer PC.
+Projects use a lot of tools (e.g. compilers) which have no installation setup, i.e. where the installation is only a simple copy function.  
+For these tools, we need an automated mechansim to deploy them on the CI Platform and the developer PC.  
 The motivation is that all developers can create Conan packages which are needed in the project by themselves .
 
 Image1
@@ -26,10 +26,10 @@ The following description explains how to create a Conan package for tools witho
 
 ### Precondition
 
-  1. The tool should be available in our Artifactory toolchain repository: (c_adas_cip_toolchain_generic_v).
-If this not the case, please upload it to the stage repository: [c_adas_customer_toolchain_generic_stage_l](https://eu.artifactory.conti.de/artifactory/c_adas_customer_toolchain_generic_stage_l/)
-if it's your file correct uploaded (content complete, correct structure) then you can move it to the productive repository: [c_adas_customer_toolchain_generic_l](https://eu.artifactory.conti.de/artifactory/c_adas_customer_toolchain_generic_l/)
-For further Help/support with Artifactory please read the Artifactory user documentation: https://confluence-adas.zone2.agileci.conti.de/display/public/department0034/122.+UD+-+Artifactory#id-122.UDArtifactory-AdvancedUseCases
+  1. The tool should be available in our Artifactory toolchain repository: [c_adas_cip_toolchain_generic_v](https://artifactory.geo.conti.de/ui/repos/tree/General/c_adas_cip_toolchain_generic_v/).  
+If this not the case, please upload it to the stage repository: [c_adas_customer_toolchain_generic_stage_l](https://eu.artifactory.conti.de/artifactory/c_adas_customer_toolchain_generic_stage_l/)  
+if it's your file correct uploaded (content complete, correct structure) then you can move it to the productive repository: [c_adas_customer_toolchain_generic_l](https://eu.artifactory.conti.de/artifactory/c_adas_customer_toolchain_generic_l/)  
+For further Help/support with Artifactory please read the Artifactory user documentation: https://confluence-adas.zone2.agileci.conti.de/display/public/department0034/122.+UD+-+Artifactory#id-122.UDArtifactory-AdvancedUseCases  
 If you have no Access to these Artifactory repositories or to the GitHub repo [cip_bti_conan](https://github-am.geo.conti.de/ADAS-3RDPARTY/cip_bti_conan), then please create a [IPUP-Ticket](https://jira.auto.continental.cloud/servicedesk/customer/portal/42/create/137) with the settings from the screenshot:
 Image2
 Alternative you can also create a CIP "[Request Access](https://jira-adas.zone2.agileci.conti.de/secure/CreateIssueDetails!init.jspa?pid=10200&issuetype=10300&priority=3&summary=User+permissions+change)" Ticket.
