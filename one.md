@@ -75,11 +75,13 @@ For how to do achieve this please have a look in our 3rdparty conan documentatio
 
   1. If this is the first time, you want to download something from a Docker registry on Artifactory,  you will have to authenticate first:
 
-     |docker login c-adas-cip-docker-v.eu.artifactory.conti.de|
+       | docker login c-adas-cip-docker-v.eu.artifactory.conti.de |
+       |----------------------------------------------------------|
 
   2. Download your image using docker pull. e.g.:
 
-docker pull c-adas-cip-docker-v.eu.artifactory.conti.de/build/build_system_3.0_qaf:2019.02.22
+       | docker pull c-adas-cip-docker-v.eu.artifactory.conti.de/build/build_system_3.0_qaf:2019.02.22 |
+       |-----------------------------------------------------------------------------------------------|
 
 You will have to login again, after you change your password or if you want to access a different docker registry (e.g. eu.artifactory.conti.de:7002)
 
