@@ -85,26 +85,6 @@ For how to do achieve this please have a look in our 3rdparty conan documentatio
 
 You will have to login again, after you change your password or if you want to access a different docker registry (e.g. eu.artifactory.conti.de:7002)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Advanced Use Cases
 ### Overview Artifactory toolchain repositories
 
@@ -162,4 +142,4 @@ For the download, please use the virtual Artifactory repositories. The last char
 ### Point of contact
 #### Service Owner
 Bachmeier, Alexander
-The virtual repositories includes other local repositories.
+
