@@ -119,3 +119,92 @@ Image Ship status
   - (warning) For components with License Risk = HIGH, please double-check before marking as "Ship status = No". If these components contribute to the product in any way there is high risk of license contamination.
 
 
+### Column - Usage/Integration Scenario
+
+image Usage/Integration Scenario
+
+### Provide the Usage/Integration Scenario for each component:
+Here, the project team needs to verify how the listed components in the initial reports are linking/integrated with Continental proprietary code (i.e. the component which is named as project name in the FOSS report).
+
+
+Image Integrated_with_Continental_proprietary_code.
+
+### Based on the selection of Ship Status:
+
+If **"YES"**, then usage/integration should be one of the below 5 options:
+
+  - Statically Linked or Dynamically Linked or Separate Work or Dev-Tool/Excluded or Pre-requisite
+
+
+If **"NO"**, then usage/integration should be one of the below 2 options:
+
+  - Dev-Tool/Excluded or Pre-requisite
+
+### Definitions of different usage/integration scenario:
+
+  - **Statically Linked:**
+
+    Static Linking is a method to link individual program modules to an executable program. With static Linking, the individual modules are linked to one single file. The individual program libraries are linked to the compilation of another program by a so-called linker. Thereby the linker generates an executable file or (depending on the operating system) a loading module in a loading library, in which the called modules are integrated/ attached statically. This procedure doesn’t change the source code of the individual libraries but the linking of an accessing program with a library generates a permanently linked new program.
+
+    In the situation of system calls (https://en.wikipedia.org/wiki/System_call) please choose scenario of "Separate work" as usage.
+
+    In the situation of ship status as "NO", then choose scenario of "Pre-requisite" as usage.
+
+  - **Dynamically linked:**
+    Dynamic Linking is a method to link individual program modules to an executable program, too. With dynamic Linking of program libraries, the main memory loads the components only while the runtime. So dynamic Linking means the executed program and the accessed library are linked only at the moment of program execution.
+
+    Examples: .dll or .jar files
+
+    In the situation of system calls (https://en.wikipedia.org/wiki/System_call) please choose scenario of "Separate work" as usage.
+
+    In the situation of ship status as "NO", then choose scenario of "Pre-requisite" as usage.
+
+  - **Separate Work:** 
+      Consider, if OS Library is a requirement for an application to run which is not available as part of the standard operating system (ex: Linux, windows). In general these packages are defined to work with OS and act as a bridge between applications and OS. It can be downloaded from OS libraries made available or contributed by the OS vendors. In this case, when this packages were used by applications, it’s usage is considered as a separate work.
+
+       **Standalones** – The software program that can be executed by itself, without the need for other programs or files to be present. This type of application is often self-contained and does not require any installation in order to run. The connection to other software is accomplished, for example, via pipes, sockets or command line parameters.
+
+       **Examples:** Curl, zip, unzip etc.. (these are applicable for both windows and Linux OS). Mostly these packages were sent as part of the release (i.e. build/executables).
+
+       **System Call** is a method by which the program can execute functionalities available in the operating system. A linkage only happens temporarily when information is send from a program to the hardware, the kernel or other processes or the program is reading information from the hardware, the kernel or other processes.
+
+       **Examples:** On Unix, Unix-like and other POSIX-compliant operating systems, popular system calls are open, read, write, close, wait, exec, fork, exit, and kill (see: https://en.wikipedia.org/wiki/System_call)
+
+     In the situation of ship status as "NO", then choose scenario of Pre-requisite/Dev tool excluded as usage.
+
+  - **Dev Tool/Excluded:**
+
+      In few cases, the project team wants to ship software tools which is used for development and it is required by OEM/Customers to setup the development environment on their end. Development tools can be part of the delivery or may not be part of the delivery based on the application/software requirements.
+
+      **Examples:** Eclipse IDE, google test, etc..
+
+  - **Pre-Requisite:**
+In general any application/software to run, it requires a platform which provide/support default inbuilt functions/system calls from application code packages. This creates a dependency for the application/software but it is not required to ship the entire pre-requisites as it is widely available or used by the end customers. But one addition to this, pre-requisite can be part of the delivery or may not be part of the delivery based on the application/software requirements.
+
+
+## Column - Modification 
+
+Image  Modification
+
+  - If files corresponding to the component are being modified, please let us know in the “Modification (Yes/No)” column.
+
+## Column - Dev Team Comments
+
+You can give your comments in the 'Dev Team Comments' column in the "Components" tab.
+
+Image Dev Team Comments
+
+If you want to know where the corresponding files of any specific components present in the package, please refer “Source” worksheet in the reports.
+
+
+## Tab - Source
+
+Component source files will be listed in this section.
+
+Image source 
+
+## Tab - Tools Summary
+
+This tab contains general information about the Tools used for Scan Review.
+
+Image Tools Summary
